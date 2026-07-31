@@ -1,27 +1,91 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Dawid Bronikowski Portfolio</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="inside"><a href="index.html">Home</a></li>
+                <li class="inside"><a href="about.html">About</a></li>
+                <li class="inside"><a href="projects.html">Projects</a></li>
+                <li class="inside"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hello! My name is Dawid Bronikowski, and this is my personal portfolio website. Here you can find information about me, my projects, and how to get in touch with me.</p>
+        <section class="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p><a href="https://github.com/Dron3xx" target="_blank">View my GitHub</a></p>
+            <p>I'm an aspiring Cloud & DevOps Engineer with a passion for AWS, automation, IaC and continuous integration.</p>
+            <p>am currently learning Azure and Google Cloud Platform to expand my cloud expertise.</p>
+            <p>My goal is to automate and optimize cloud infrastructure and workflows.</p>
+        </section>
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-category">
+                <h3>Cloud</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li>Currently learning: Azure, Google Cloud Platform</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>DevOps</h3>
+                <ul>
+                    <li>Docker</li>
+                    <li>GitHub Actions</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>OS</h3>
+                <ul>
+                    <li>Linux</li>
+                    <li>Windows</li>
+                </ul>
+            </div>
+        </section>
+        <section class="education">
+            <h2>Education & Certifications</h2>
+            <ul class="certifications-list">
+                <li>Cloud & DevOps CEE - Beginner</li>
+                <li>Cloud & DevOps CEE - Fundamentals</li>
+                <li>AWS Educate Badges (10) - 
+                    <a href="https://www.credly.com/users/dawid-bronikowski" target="_blank">
+                        View on Credly
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/aws-cloud-website/" target="_blank">Project 1</a>
+                    <p>My first project is a cloud-based website hosted on AWS, demonstrating my skills in cloud architecture and deployment.</p>
+                </li>
+                <li>Projects coming soon...</li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Dawid Bronikowski. All rights reserved.</p>
+        <p>&copy; 2026 Dawid Bronikowski. All rights reserved.</p>
+        <div class="contact-info">
+            <a href="mailto:dawid.bronikowski@outlook.com">Contact me</a>
+        </div>
+        <p id="lastupdate"><!--ustawic autmatyczna aktualizacje daty-->last updated: 31/07/2026</p>
     </footer>
 </body>
 </html>
