@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="container">
         <nav>
             <ul>
                 <li class="inside"><a href="index.html">Home</a></li>
@@ -17,56 +17,58 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <section class="home">
             <h1>Welcome to My Portfolio</h1>
-            <p><a href="https://github.com/Dron3xx" target="_blank">View my GitHub</a></p>
+            <p><a href="https://github.com/Dron3xx" target="_blank" class="btn">View my GitHub</a></p>
             <p>I'm an aspiring Cloud & DevOps Engineer with a passion for AWS, automation, IaC and continuous integration.</p>
             <p>am currently learning Azure and Google Cloud Platform to expand my cloud expertise.</p>
             <p>My goal is to automate and optimize cloud infrastructure and workflows.</p>
         </section>
-        <section class="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-category">
-                <h3>Cloud</h3>
-                <ul>
-                    <li>AWS</li>
-                    <li>Currently learning: Azure, Google Cloud Platform</li>
+        <section class="skiedu">
+            <div class="skills, panel ">
+                <h2>Technical Skills</h2>
+                <div class="skills-category">
+                    <h3>Cloud</h3>
+                    <ul>
+                        <li>AWS</li>
+                        <li>Currently learning: Azure, Google Cloud Platform</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>DevOps</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>GitHub Actions</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>OS</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education, panel">
+                <h2>Education & Certifications</h2>
+                <ul class="certifications-list">
+                    <li>Cloud & DevOps CEE - Beginner</li>
+                    <li>Cloud & DevOps CEE - Fundamentals</li>
+                    <li>AWS Educate Badges (10) - 
+                        <a href="https://www.credly.com/users/dawid-bronikowski" target="_blank">
+                            View on Credly
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="skills-category">
-                <h3>DevOps</h3>
-                <ul>
-                    <li>Docker</li>
-                    <li>GitHub Actions</li>
-                </ul>
-            </div>
-            <div class="skills-category">
-                <h3>Programming</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Bash</li>
-                </ul>
-            </div>
-            <div class="skills-category">
-                <h3>OS</h3>
-                <ul>
-                    <li>Linux</li>
-                    <li>Windows</li>
-                </ul>
-            </div>
-        </section>
-        <section class="education">
-            <h2>Education & Certifications</h2>
-            <ul class="certifications-list">
-                <li>Cloud & DevOps CEE - Beginner</li>
-                <li>Cloud & DevOps CEE - Fundamentals</li>
-                <li>AWS Educate Badges (10) - 
-                    <a href="https://www.credly.com/users/dawid-bronikowski" target="_blank">
-                        View on Credly
-                    </a>
-                </li>
-            </ul>
         </section>
         <section class="projects">
             <h2>Projects</h2>
@@ -80,7 +82,7 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer class="container">
         <p>&copy; 2026 Dawid Bronikowski. All rights reserved.</p>
         <div class="contact-info">
             <a href="mailto:dawid.bronikowski@outlook.com">Contact me</a>
