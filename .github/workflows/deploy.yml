@@ -1,10 +1,10 @@
-steps:
- - Checkout
-# - Validate HTML
-# - Validate CSS
-# - Update Last Modified Date
-# - Deploy
-# - CloudFront Invalidation
+jobs:
+- Checkout
+#- Validate HTML
+#- Validate CSS
+#- Update Last Modified Date
+#- Deploy
+#- CloudFront Invalidation
 
 Checkout:
   uses: actions/checkout@v7 
