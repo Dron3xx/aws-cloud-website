@@ -1,20 +1,20 @@
 steps:
  - Checkout
- - Validate HTML
- - Validate CSS
- - Update Sitemap
- - Deploy
- - CloudFront Invalidation
+# - Validate HTML
+# - Validate CSS
+# - Update Last Modified Date
+# - Deploy
+# - CloudFront Invalidation
 
 Checkout:
-  uses: actions/checkout@v3
+  uses: actions/checkout@v7 
 
-Validate HTML:
+#Validate HTML:
 
-Validate CSS:
+#Validate CSS:
 
-Update Sitemap:
+#Update Last Modified Date:
 
-Deploy:
+#Deploy:
 
-CloudFront Invalidation:
+#CloudFront Invalidation:
