@@ -1,6 +1,20 @@
 steps:
- - name: Checkout
-    uses: actions/checkout@v3
+ - Checkout
+ - Validate HTML
+ - Validate CSS
+ - Update Sitemap
+ - Deploy
+ - CloudFront Invalidation
 
 Checkout:
   uses: actions/checkout@v3
+
+Validate HTML:
+
+Validate CSS:
+
+Update Sitemap:
+
+Deploy:
+
+CloudFront Invalidation:
