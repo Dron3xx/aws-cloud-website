@@ -181,12 +181,10 @@ footer{
     padding: 20px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    border-radius: 5px
 }
 footer a{
     color: var(--accent-color);
     margin-left: 10px;
-    border-radius: 5px
     margin-right: 10px;
 }
 /*end of footer*/
