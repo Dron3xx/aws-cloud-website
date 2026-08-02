@@ -30,7 +30,7 @@ jobs:
       - name: Validate links
         uses: lycheeverse/lychee-action@v2.9.0
         with:
-          args: --verbose --no-progress "./**/*.html" --timeout 5 --retry 3
+          args: --verbose --no-progress "./**/*.html" --timeout 5
 
       - name: Validate CSS
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
