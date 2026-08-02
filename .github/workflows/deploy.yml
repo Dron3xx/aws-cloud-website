@@ -9,7 +9,7 @@ on:
 #  CLOUDFRONT_DISTRIBUTION_ID: your-cloudfront-distribution-id
 
 jobs:
-  deploy:
+  Checkout:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,3 +19,4 @@ jobs:
       #- Update Last Modified Date
       #- Deploy
       #- CloudFront Invalidation
+          
