@@ -186,5 +186,6 @@ footer a{
     color: var(--accent-color);
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 5px
 }
 /*end of footer*/
