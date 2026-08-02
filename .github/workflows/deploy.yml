@@ -1,20 +1,21 @@
+on:
+  push:
+    branches:
+      - main
+
+#env:
+#  AWS_REGION: us-east-1
+#  S3_BUCKET: your-s3-bucket-name
+#  CLOUDFRONT_DISTRIBUTION_ID: your-cloudfront-distribution-id
+
 jobs:
-- Checkout
-#- Validate HTML
-#- Validate CSS
-#- Update Last Modified Date
-#- Deploy
-#- CloudFront Invalidation
-
-Checkout:
-  uses: actions/checkout@v7 
-
-#Validate HTML:
-
-#Validate CSS:
-
-#Update Last Modified Date:
-
-#Deploy:
-
-#CloudFront Invalidation:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      #- Validate HTML
+      #- Validate CSS
+      #- Update Last Modified Date
+      #- Deploy
+      #- CloudFront Invalidation
