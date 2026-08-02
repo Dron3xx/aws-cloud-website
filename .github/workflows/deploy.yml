@@ -14,6 +14,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+  Validate:
+    runs-on: ubuntu-latest
+    needs: Checkout
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: "."
+          extra: "--skip-non-html"
+
+      - name: Validate links
+        uses: lycheeverse/lychee-action@v2.3.0
+        with:
+          args: --verbose "./**/*.html" --timeout 5 --retry 3
+
+      - name: Validate CSS
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: "css"
+          css: true
       #- Validate HTML
       #- Validate CSS
       #- Update Last Modified Date
