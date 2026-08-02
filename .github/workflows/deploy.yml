@@ -37,8 +37,6 @@ jobs:
         with:
           root: "css"
           css: true
-      #- Validate HTML
-      #- Validate CSS
       #- Update Last Modified Date
       #- Deploy
       #- CloudFront Invalidation
