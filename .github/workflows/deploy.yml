@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
   Validate:
     runs-on: ubuntu-latest
     needs: Checkout
@@ -28,7 +28,7 @@ jobs:
           extra: "--skip-non-html"
 
       - name: Validate links
-        uses: lycheeverse/lychee-action@v2.3.0
+        uses: lycheeverse/lychee-action@v2.9.0
         with:
           args: --verbose --no-progress "./**/*.html" --timeout 5 --retry 3
 
