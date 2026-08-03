@@ -5,7 +5,8 @@ import re
 
 def update_footer_metadata():
     # Get the current date in the desired format
-    current_date = dt.datetime.now().strftime("%d-%m-%Y")
+    iso_date = dt.datetime.now().strftime("%d-%m-%Y")
+    display_date = dt.datetime.now().strftime("%d-%m-%Y")
 
     # Define the path to the index.html file
     index_file_path = Path(__file__).parent.parent / "index.html"
@@ -14,17 +15,18 @@ def update_footer_metadata():
     # Use BeautifulSoup to parse the HTML
     soup = BeautifulSoup(html, "html.parser")
 
-    # Find the <time> element with id="lastupdate"
-    time_element = soup.find("time", id="lastupdate")
+    # Find the <time> element with id="lastupdate-time"
+    time_element = soup.find("time", id="lastupdate-time")
     if time_element:
         # Update the text of the <time> element with the current date
-        time_element.string = current_date
+        time_element["datetime"] = iso_date
+        time_element.string = display_date
 
         # Write the updated HTML back to the index.html file
         index_file_path.write_text(str(soup), encoding="utf-8")
-        print(f"Updated last updated date to: {current_date}")
+        print(f"Updated last updated date to: {display_date}")
     else:
-        print("Element with id='lastupdate' not found.")
+        print("Element with id='lastupdate-time' not found.")
 
 if __name__ == "__main__":
     update_footer_metadata()
