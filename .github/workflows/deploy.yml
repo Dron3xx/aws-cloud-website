@@ -40,7 +40,7 @@ jobs:
           css: true
       
       #Python validation
-      - name: Validate python
+      - name: Install python
         uses: actions/setup-python@v7
         with:
           python-version: '3.x'
@@ -52,7 +52,7 @@ jobs:
 
       - name: Run ruff
         run: |
-          ruff check . --select ALL --show-source --exit-zero
+          ruff check . --select ALL --show-files --exit-zero
 
       - name: Check Ruff Formatting
         run: 
