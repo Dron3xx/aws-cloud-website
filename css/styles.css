@@ -124,6 +124,9 @@ section:not(:nth-child(2)){
     color: var(--text-color);
     margin-bottom: 10px;
 }
+.education ul li a{
+    color: var(--primary-color);
+}
 
 .projects{
     display: grid;
