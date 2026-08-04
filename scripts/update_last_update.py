@@ -1,7 +1,7 @@
 import datetime as dt
 from pathlib import Path
 from bs4 import BeautifulSoup
-import re
+
 
 def update_footer_metadata():
     # Get the current date in the desired format
@@ -27,6 +27,7 @@ def update_footer_metadata():
         print(f"Updated last updated date to: {display_date}")
     else:
         print("Element with id='lastupdate-time' not found.")
+
 
 if __name__ == "__main__":
     update_footer_metadata()
