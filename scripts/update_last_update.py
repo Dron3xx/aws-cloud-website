@@ -1,12 +1,13 @@
 import datetime as dt
 from pathlib import Path
+
 from bs4 import BeautifulSoup
 
 
 def update_footer_metadata():
     # Get the current date in the desired format
-    iso_date = dt.datetime.now().strftime("%Y-%m-%d")
-    display_date = dt.datetime.now().strftime("%d/%m/%Y")
+    iso_date = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+    display_date = dt.datetime.now(dt.timezone.utc).strftime("%d/%m/%Y")
 
     # Define the path to the index.html file
     index_file_path = Path(__file__).parent.parent / "index.html"
