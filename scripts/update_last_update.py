@@ -1,10 +1,13 @@
 """Update the metadata in the index.html file."""
 
-import logging
 import datetime as dt
+import logging
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+
+logger = logging.getLogger(__name__)
+
 
 def update_footer_metadata() -> None:
     """Update the last-updated date in the index.html footer."""
@@ -28,9 +31,9 @@ def update_footer_metadata() -> None:
 
         # Write the updated HTML back to the index.html file
         index_file_path.write_text(str(soup), encoding="utf-8")
-        logging.info(f"Updated last updated date to: {display_date}")
+        logger.info("Updated last updated date to: %s", display_date)
     else:
-        logging.warning("Element with id='lastupdate-time' not found.")
+        logger.warning("Element with id='lastupdate-time' not found.")
 
 
 if __name__ == "__main__":
