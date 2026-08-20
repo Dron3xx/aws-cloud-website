@@ -109,5 +109,3 @@ jobs:
       - name: invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation --distribution-id "${{ env.CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/*"
-      #- aws S3 sync
-      #- CloudFront Invalidation
