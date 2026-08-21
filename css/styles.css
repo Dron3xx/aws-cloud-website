@@ -57,17 +57,10 @@ header{
     border-bottom-right-radius: 12px;
 }
 
-header ul{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin:0;
-}
-header nav a{
+header h1{
+    margin: 0;
     color: white;
-}
-header nav a:hover{
-    color: #66b3ff;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
 }
 /*end of header*/
 
