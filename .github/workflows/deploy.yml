@@ -102,13 +102,25 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: sync files to S3
+      - name: Sync files to S3
         run: |
           aws s3 sync website/ s3://${{ env.AWS_S3_BUCKET }} --delete
       - name: Verify S3 files
         run: |
           aws s3 cp s3://${{ env.AWS_S3_BUCKET }}/css/styles.css -
 
-      - name: invalidate CloudFront cache
+      - name: Invalidate CloudFront cache
+        id: invalidate
         run: |
-          aws cloudfront create-invalidation --distribution-id "${{ env.CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/*"
+          invalidation_id=$(aws cloudfront create-invalidation \
+            --distribution-id "${{ env.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "/*" \
+            --query 'Invalidation.Id' \
+            --output text)
+          echo "invalidation_id=$invalidation_id" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for invalidation
+        run: |
+          aws cloudfront wait invalidation-completed \
+            --distribution-id "${{ env.CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --id "${{ steps.invalidate.outputs.invalidation_id }}"
