@@ -128,20 +128,71 @@ section:not(:nth-child(2)){
 }
 .projects ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 0;
 }
-.projects > ul > li{
+#project-move > ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    justify-self: stretch;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#project-move > ul.is-centered{
+    justify-content: center;
+}
+#project-move > ul > li{
     width: 200px;
     margin: 10px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+#project-move{
+    display: grid;
+    grid-template-columns: 15px minmax(0, 1fr) 15px;
+    overflow: hidden;
+}
+#arrow-left,
+#arrow-right{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#arrow-left::before,
+#arrow-right::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+#arrow-left::before{
+  border-right: 12px solid black;
+}
+#arrow-right::before{
+  border-left: 12px solid black;
 }
 .project-item{
+    flex-shrink: 0;
     display: grid;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 12px;
     padding: 10px;
+    margin: 0 10px;
     width: 100%;
     width: 200px;
 }
@@ -207,14 +258,27 @@ footer a{
         min-width: 0;
     }
 
-    .projects ul{
-        flex-direction: column;
-        align-items: center;
+    #project-move{
+        grid-template-columns: 18px minmax(0, 1fr) 18px;
     }
 
+    #project-move > ul > li,
     .project-item{
-        max-width: 100%;
+        width: calc(100% - 16px);
+        min-width: calc(100% - 16px);
+        margin: 0 8px;
         box-sizing: border-box;
+    }
+
+    #project-move > ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: hidden;
+        width: 100%;
+        max-width: none;
+        justify-self: stretch;
+        padding: 0;
     }
 }
 /*end of mobile*/

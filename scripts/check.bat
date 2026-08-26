@@ -18,4 +18,12 @@ if errorlevel 1 (
     exit /b 1
 )
 
+echo Running Biome formatting
+biome check ./js
+if errorlevel 1 (
+    echo Biome formatting check failed. Please fix the issues above.
+    pause
+    exit /b 1
+)
+
 pause

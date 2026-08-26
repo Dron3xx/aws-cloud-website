@@ -33,6 +33,12 @@ jobs:
           root: "css/"
           css: true
 
+      - name: Validate JS
+        uses: biomejs/setup-biome@v2
+      - run: |
+          biome check ./js
+
+
       #Python validation
       - name: Install python
         uses: actions/setup-python@v7
@@ -76,10 +82,11 @@ jobs:
       - name: Create Artifact
         uses: actions/upload-artifact@v7
         with:
-          name: website-html-css
+          name: website-html-css-js
           path: |
             index.html
             css/
+            js/
           if-no-files-found: error
 
   Deploy:
@@ -93,7 +100,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v7
         with:
-          name: website-html-css
+          name: website-html-css-js
           path: website
 
       - name: Configure AWS OIDC

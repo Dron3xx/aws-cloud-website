@@ -4,7 +4,7 @@
     <title>Dawid Bronikowski Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
@@ -85,35 +85,39 @@
             </section>
             <section id="projects" class="projects">
                 <h2>Projects</h2>
-                <ul>
-                    <li class="project-item">
-                        <h5>AWS Portfolio Website</h5>
-                        <p>Static AWS portfolio website deployed on S3</p>
-                        <h4>Technologies used:</h4>
-                        <ul>
-                            <li><i class="devicon-amazonwebservices-plain-wordmark"></i>AWS</li>
-                            <li><i class="devicon-githubactions-plain colored"></i>GitHub Actions</li>
-                            <li><i class="devicon-html5-plain colored"></i>HTML/CSS</li>
-                        </ul>
-                        <p>Status: Finished</p>
-                        <a href="https://github.com/Dron3xx/aws-cloud-website" target="_blank" class="btn">GitHub</a>
-                    </li>
-                    <li class="project-item">
-                        <h5>Stiukov</h5>
-                        <p>Windows Voice Assistant</p>
-                        <h4>Technologies used:</h4>
-                        <ul>
-                            <li><i class="devicon-python-plain colored"></i>Python</li>
-                            <li>🎙️ Speech Recognition</li>
-                            <li>⚙️ psutil</li>
-                            <li><i class="devicon-opencv-plain-wordmark colored"></i>OpenCV</li>
-                            <li><i class="devicon-tensorflow-original colored"></i>TensorFlow</li>
-                        </ul>
-                        <p>Status: In progress</p>
-                        <a href="https://github.com/Dron3xx/Stiukov" target="_blank" class="btn">GitHub</a>
-                    </li>
-                    <!-- <li class="project-item">Projects coming soon...</li> -->
-                </ul>
+                <div id="project-move">
+                    <div id="arrow-left"></div>
+                    <ul>
+                        <li class="project-item">
+                            <h5>AWS Portfolio Website</h5>
+                            <p>Static AWS portfolio website deployed on S3</p>
+                            <h4>Technologies used:</h4>
+                            <ul>
+                                <li><i class="devicon-amazonwebservices-plain-wordmark"></i>AWS</li>
+                                <li><i class="devicon-githubactions-plain colored"></i>GitHub Actions</li>
+                                <li><i class="devicon-html5-plain colored"></i>HTML/CSS</li>
+                            </ul>
+                            <p>Status: Finished</p>
+                            <a href="https://github.com/Dron3xx/aws-cloud-website" target="_blank" class="btn">GitHub</a>
+                        </li>
+                        <li class="project-item">
+                            <h5>Stiukov</h5>
+                            <p>Windows Voice Assistant</p>
+                            <h4>Technologies used:</h4>
+                            <ul>
+                                <li><i class="devicon-python-plain colored"></i>Python</li>
+                                <li>🎙️ Speech Recognition</li>
+                                <li>⚙️ psutil</li>
+                                <li><i class="devicon-opencv-plain-wordmark colored"></i>OpenCV</li>
+                                <li><i class="devicon-tensorflow-original colored"></i>TensorFlow</li>
+                            </ul>
+                            <p>Status: In progress</p>
+                            <a href="https://github.com/Dron3xx/Stiukov" target="_blank" class="btn">GitHub</a>
+                        </li>
+                        <!-- <li class="project-item">Projects coming soon...</li> -->
+                    </ul>
+                    <div id="arrow-right"></div>
+                </div>
             </section>
         </main>
         <footer id="contact">
@@ -127,5 +131,7 @@
             </p>
         </footer>
     </div>
+    
+    <script src="js/projectscroll.js"></script>
 </body>
 </html>
