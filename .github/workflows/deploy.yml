@@ -17,7 +17,7 @@ jobs:
 
       #HTML/CSS validation
       - name: Validate HTML
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        uses: Cyb3r-Jak3/html5validator-action@v8.0.0
         with:
           root: "."
           extra: "--skip-non-html"
@@ -28,7 +28,7 @@ jobs:
           args: --verbose --no-progress "./**/*.html" --timeout 5
 
       - name: Validate CSS
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        uses: Cyb3r-Jak3/html5validator-action@v8.0.0
         with:
           root: "css/"
           css: true
