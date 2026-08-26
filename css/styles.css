@@ -142,9 +142,8 @@ section:not(:nth-child(2)){
     border: 1px solid var(--primary-color);
     border-radius: 12px;
     padding: 10px;
-    box-sizing: border-box;
     width: 100%;
-    max-width: 200px;
+    width: 200px;
 }
 .project-item .btn{
     background-color: var(--primary-color);
@@ -166,9 +165,12 @@ section:not(:nth-child(2)){
     margin: 0px;
     height: 20px;
 }
+.project-item ul{
+    display: grid;
+}
 .project-item ul li{
     margin: 0px;
-    padding: 0px;
+    padding: 2px;
     height: 20px;
 }
 /*end of main*/
