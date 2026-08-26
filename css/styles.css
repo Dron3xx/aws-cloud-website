@@ -162,7 +162,7 @@ section:not(:nth-child(2)){
 #arrow-left,
 #arrow-right{
     width: 20px;
-    height: 20px;
+    height: 100%;
     position: relative;
     z-index: 2;
     cursor: pointer;
@@ -176,8 +176,8 @@ section:not(:nth-child(2)){
     display: block;
     width: 0;
     height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
 }
 #arrow-left::before{
   border-right: 12px solid black;
