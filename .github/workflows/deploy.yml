@@ -105,6 +105,7 @@ jobs:
       - name: Sync files to S3
         run: |
           aws s3 sync website/ s3://${{ env.AWS_S3_BUCKET }} --delete
+
       - name: Verify S3 files
         run: |
           aws s3 cp s3://${{ env.AWS_S3_BUCKET }}/css/styles.css -
