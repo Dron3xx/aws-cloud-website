@@ -1,4 +1,24 @@
 # Cloud & DevOps Portfolio
+```text
+                 Visitor
+                    │
+                    ▼
+             AWS S3 / Hosting
+                    │
+                    ▼
+          Cloud & DevOps Portfolio
+             │       │       │
+             ▼       ▼       ▼
+           HTML     CSS      JS
+                    │
+                    ▼
+             GitHub Repository
+                    │
+             ┌──────┴──────┐
+             ▼             ▼
+      Validation       Maintenance
+      Ruff + Biome     Python + BS4
+```
 
 A personal portfolio website for Dawid Bronikowski, built as a modern cloud and DevOps-focused landing page. The project showcases skills, certifications, and professional growth across AWS, Azure, and Google Cloud Platform, while demonstrating a strong interest in automation, infrastructure as code, and CI/CD.
 
@@ -37,6 +57,7 @@ The site is built with plain HTML and CSS, making it lightweight, fast, and easy
 - `images/` – image assets
 - `scripts/check.bat` – Windows validation script for linting and formatting
 - `scripts/update_last_update.py` – updates the footer date in the HTML
+- `explained.md` – detailed explanation of the website structure and supporting tools
 - `README.md` – project documentation
 - `LICENSE` – project license information
 
