@@ -7,148 +7,364 @@
     <link rel="stylesheet" href="css/styles.css?v=3">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
+
 <body>
     <div class="container">
+
         <header>
-            <h1>Welcome to My Portfolio</h1>
+            <h1 data-i18n="Welcome">Welcome to My Portfolio</h1>
+
+            <button id="pl" class="lang_button">PL</button>
+            <button id="eng" class="lang_button">ENG</button>
         </header>
+
         <main>
+
             <section id="about" class="home">
-                <p><a href="https://github.com/Dron3xx" target="_blank" class="btn">View my GitHub<i class="devicon-github-plain colored"></i></a></p>
-                <p>I'm an aspiring Cloud & DevOps Engineer with a passion for AWS, automation, IaC and continuous integration.</p>
-                <p>I am currently learning Azure and Google Cloud Platform to expand my cloud expertise.</p>
-                <p>My goal is to automate and optimize cloud infrastructure and workflows.</p>
+
+                <p>
+                    <a href="https://github.com/Dron3xx" target="_blank" class="btn">
+                        <span data-i18n="ViewGitHub">View my GitHub</span>
+                        <i class="devicon-github-plain colored"></i>
+                    </a>
+                </p>
+
+                <p data-i18n="AboutDescription1">
+                    I'm an aspiring Cloud & DevOps Engineer with a passion for AWS, automation, IaC and continuous integration.
+                </p>
+
+                <p data-i18n="AboutDescription2">
+                    I am currently learning Azure and Google Cloud Platform to expand my cloud expertise.
+                </p>
+
+                <p data-i18n="AboutDescription3">
+                    My goal is to automate and optimize cloud infrastructure and workflows.
+                </p>
+
             </section>
+
+
             <section class="skiedu">
+
                 <div class="skills panel">
-                    <h2>Technical Skills</h2>
+
+                    <h2 data-i18n="TechnicalSkills">Technical Skills</h2>
+
+
                     <div class="skills-category">
-                        <h3><i class="devicon-cloud-plain colored"></i> Cloud</h3>
+
+                        <h3>
+                            <i class="devicon-cloud-plain colored"></i>
+                            <span data-i18n="Cloud">Cloud</span>
+                        </h3>
+
                         <ul>
+
                             <li>
-                                <i class="devicon-amazonwebservices-plain-wordmark"></i> AWS
+                                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                                AWS
                             </li>
+
                             <li>
-                                <i class="devicon-azure-plain-wordmark"></i> Azure (learning)
+                                <i class="devicon-azure-plain-wordmark"></i>
+                                Azure <span data-i18n="Learning">(learning)</span>
                             </li>
+
                             <li>
-                                <i class="devicon-googlecloud-plain-wordmark"></i> GCP (learning)
+                                <i class="devicon-googlecloud-plain-wordmark"></i>
+                                GCP <span data-i18n="Learning">(learning)</span>
                             </li>
+
                         </ul>
+
                     </div>
+
+
                     <div class="skills-category">
+
                         <h3>DevOps</h3>
+
                         <ul>
+
                             <li>
-                                <i class="devicon-docker-plain colored"></i> Docker
+                                <i class="devicon-docker-plain colored"></i>
+                                Docker
                             </li>
+
                             <li>
-                                <i class="devicon-githubactions-plain colored"></i> GitHub Actions
+                                <i class="devicon-githubactions-plain colored"></i>
+                                GitHub Actions
                             </li>
+
                             <li>
-                                <i class="devicon-terraform-plain colored"></i> Terraform
+                                <i class="devicon-terraform-plain colored"></i>
+                                Terraform
                             </li>
+
                         </ul>
+
                     </div>
+
+
                     <div class="skills-category">
-                        <h3>Programming</h3>
+
+                        <h3 data-i18n="Programming">Programming</h3>
+
                         <ul>
+
                             <li>
-                                <i class="devicon-python-plain colored"></i> Python
+                                <i class="devicon-python-plain colored"></i>
+                                Python
                             </li>
+
                             <li>
-                                <i class="devicon-bash-plain colored"></i> Bash
+                                <i class="devicon-bash-plain colored"></i>
+                                Bash
                             </li>
+
                         </ul>
+
                     </div>
+
+
                     <div class="skills-category">
+
                         <h3>OS</h3>
+
                         <ul>
+
                             <li>
-                                <i class="devicon-linux-plain colored"></i> Linux
+                                <i class="devicon-linux-plain colored"></i>
+                                Linux
                             </li>
+
                             <li>
-                                <i class="devicon-windows11-original"></i> Windows
+                                <i class="devicon-windows11-original"></i>
+                                Windows
                             </li>
+
                         </ul>
+
                     </div>
+
                 </div>
+
+
                 <div class="education panel">
-                    <h2>Education & Certifications</h2>
+
+                    <h2 data-i18n="EducationCertifications">
+                        Education & Certifications
+                    </h2>
+
                     <ul class="certifications-list">
+
                         <li>Cloud & DevOps CEE - Beginner</li>
+
                         <li>Cloud & DevOps CEE - Fundamentals</li>
-                        <li>AWS Educate Badges (10) - 
+
+                        <li>
+                            AWS Educate Badges (10) -
+
                             <a href="https://www.credly.com/users/dawid-bronikowski" target="_blank">
-                                View on Credly
+                                <span data-i18n="ViewCredly">View on Credly</span>
                             </a>
                         </li>
+
                     </ul>
+
                 </div>
+
             </section>
+
+
             <section id="projects" class="projects">
-                <h2>Projects</h2>
+
+                <h2 data-i18n="Projects">Projects</h2>
+
+
                 <div id="project-move">
+
                     <div id="arrow-left"></div>
+
+
                     <ul>
+
                         <li class="project-item">
-                            <h5>AWS Portfolio Website</h5>
-                            <p>Static AWS portfolio website deployed on S3</p>
-                            <h4>Technologies used:</h4>
+
+                            <h5 data-i18n="AWSPortfolioWebsite">
+                                AWS Portfolio Website
+                            </h5>
+
+                            <p data-i18n="AWSPortfolioDescription">
+                                Static AWS portfolio website deployed on S3
+                            </p>
+
+                            <h4 data-i18n="TechnologiesUsed">
+                                Technologies used:
+                            </h4>
+
                             <ul>
-                                <li><i class="devicon-amazonwebservices-plain-wordmark"></i>AWS</li>
-                                <li><i class="devicon-githubactions-plain colored"></i>GitHub Actions</li>
-                                <li><i class="devicon-html5-plain colored"></i>HTML/CSS</li>
+
+                                <li>
+                                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                                    AWS
+                                </li>
+
+                                <li>
+                                    <i class="devicon-githubactions-plain colored"></i>
+                                    GitHub Actions
+                                </li>
+
+                                <li>
+                                    <i class="devicon-html5-plain colored"></i>
+                                    HTML/CSS
+                                </li>
+
                             </ul>
-                            <p>Status: Finished</p>
-                            <a href="https://github.com/Dron3xx/aws-cloud-website" target="_blank" class="btn">GitHub</a>
+
+                            <p data-i18n="StatusFinished">
+                                Status: Finished
+                            </p>
+
+                            <a href="https://github.com/Dron3xx/aws-cloud-website"
+                               target="_blank"
+                               class="btn">
+                                GitHub
+                            </a>
+
                         </li>
+
+
                         <li class="project-item">
+
                             <h5>Stiukov</h5>
-                            <p>Windows Voice Assistant</p>
-                            <h4>Technologies used:</h4>
+
+                            <p data-i18n="WindowsVoiceAssistant">
+                                Windows Voice Assistant
+                            </p>
+
+                            <h4 data-i18n="TechnologiesUsed">
+                                Technologies used:
+                            </h4>
+
                             <ul>
-                                <li><i class="devicon-python-plain colored"></i>Python</li>
+
+                                <li>
+                                    <i class="devicon-python-plain colored"></i>
+                                    Python
+                                </li>
+
                                 <li>🎙️ Speech Recognition</li>
+
                                 <li>⚙️ psutil</li>
-                                <li><i class="devicon-opencv-plain-wordmark colored"></i>OpenCV</li>
-                                <li><i class="devicon-tensorflow-original colored"></i>TensorFlow</li>
+
+                                <li>
+                                    <i class="devicon-opencv-plain-wordmark colored"></i>
+                                    OpenCV
+                                </li>
+
+                                <li>
+                                    <i class="devicon-tensorflow-original colored"></i>
+                                    TensorFlow
+                                </li>
+
                             </ul>
-                            <p>Status: In progress</p>
-                            <a href="https://github.com/Dron3xx/Stiukov" target="_blank" class="btn">GitHub</a>
+
+                            <p data-i18n="StatusInProgress">
+                                Status: In progress
+                            </p>
+
+                            <a href="https://github.com/Dron3xx/Stiukov"
+                               target="_blank"
+                               class="btn">
+                                GitHub
+                            </a>
+
                         </li>
+
+
                         <li class="project-item">
-                            <h5>Terraform Project</h5>
-                            <p>AWS infrastructure with Terraform.</p>
-                            <h4>Technologies used:</h4>
+
+                            <h5 data-i18n="TerraformProject">
+                                Terraform Project
+                            </h5>
+
+                            <p data-i18n="TerraformProjectDescription">
+                                AWS infrastructure with Terraform.
+                            </p>
+
+                            <h4 data-i18n="TechnologiesUsed">
+                                Technologies used:
+                            </h4>
+
                             <ul>
-                                <li><i class="devicon-terraform-plain colored"></i>Terraform</li>
-                                <li><i class="devicon-amazonwebservices-plain-wordmark"></i>AWS</li>
+
+                                <li>
+                                    <i class="devicon-terraform-plain colored"></i>
+                                    Terraform
+                                </li>
+
+                                <li>
+                                    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                                    AWS
+                                </li>
+
                                 <li>Amazon EC2</li>
+
                                 <li>Amazon VPC</li>
+
                                 <li>Elastic Load Balancing</li>
+
                             </ul>
-                            <p>Status: Completed</p>
-                            <a href="https://github.com/Dron3xx/terraform-first-project" target="_blank" class="btn">GitHub</a>
+
+                            <p data-i18n="StatusCompleted">
+                                Status: Completed
+                            </p>
+
+                            <a href="https://github.com/Dron3xx/terraform-first-project"
+                               target="_blank"
+                               class="btn">
+                                GitHub
+                            </a>
+
                         </li>
-                        <!-- <li class="project-item">Projects coming soon...</li> -->
+
                     </ul>
+
+
                     <div id="arrow-right"></div>
+
                 </div>
+
             </section>
+
         </main>
+
         <footer id="contact">
-            <a href="mailto:dawid.bronikowski@outlook.com">Contact me</a>
-            &copy; 2026 Dawid Bronikowski. All rights reserved.
+
+            <a href="mailto:dawid.bronikowski@outlook.com"
+               data-i18n="ContactMe">
+                Contact me
+            </a>
+
+            <span data-i18n="Copyright">
+                &copy; 2026 Dawid Bronikowski. All rights reserved.
+            </span>
+
             <p>
-                Last updated: 
+                <span data-i18n="LastUpdated">Last updated:</span>
+
                 <time id="lastupdate-time" datetime="2026-08-03">
                     03/08/2026
                 </time>
             </p>
+
         </footer>
+
     </div>
-    
+
     <script src="js/projectscroll.js"></script>
+    <script src="js/language.js"></script>
+
 </body>
 </html>
