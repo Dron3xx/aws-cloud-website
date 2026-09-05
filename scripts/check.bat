@@ -19,7 +19,7 @@ if errorlevel 1 (
 )
 
 echo Running Biome formatting
-npx biome check ./js
+npx biome check ../js
 if errorlevel 1 (
     echo Biome formatting check failed. Please fix the issues above.
     pause
