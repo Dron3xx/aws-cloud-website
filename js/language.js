@@ -34,6 +34,9 @@ const translations = {
 		TerraformProjectDescription:
 			"Infrastruktura AWS utworzona przy użyciu Terraform.",
 
+		AnsibleProject: "Projekt Ansible",
+		AnsibleProjectDescription: "Konfiguracja i automatyzacja instancji AWS EC2 przy użyciu Ansible.",
+
 		StatusFinished: "Status: Zakończony",
 		StatusInProgress: "Status: W trakcie",
 		StatusCompleted: "Status: Ukończony",
@@ -73,6 +76,9 @@ const translations = {
 
 		TerraformProject: "Terraform Project",
 		TerraformProjectDescription: "AWS infrastructure with Terraform.",
+
+		AnsibleProject: "Ansible Project",
+		AnsibleProjectDescription: "Configuration and automation of AWS EC2 instances using Ansible.",
 
 		StatusFinished: "Status: Finished",
 		StatusInProgress: "Status: In progress",
