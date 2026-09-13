@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test dispatch
-        run: echo "Portfolio update triggered"
+      - name: Show repo url
+        run: echo "${{ github.event.client_payload.repo_url }}"
