@@ -84,7 +84,6 @@ const translations = {
 		AnsibleProjectDescription:
 			"Configuration and automation of AWS EC2 instances using Ansible.",
 
-		StatusFinished: "Status: Finished",
 		StatusInProgress: "Status: In progress",
 		StatusCompleted: "Status: Completed",
 
